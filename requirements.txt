@@ -1,0 +1,8 @@
+# 医疗知识库 RAG 问答 Demo —— 依赖清单
+# 说明：核心仅需 fastapi + uvicorn；numpy/scikit-learn 用于向量检索（离线模式）。
+# 不配置任何 API Key 也能完整跑通（本地 TF-IDF 稀疏向量 + 规则化生成兜底）。
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.5
+numpy>=1.26
+scikit-learn>=1.4
